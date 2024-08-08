@@ -1,0 +1,120 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(papel-de-parede.webp);
+    background-size: cover;
+    background-position: center;
+}
+main {
+    display: flex; /* para controlar um modo de exibição de um elemento*/
+    width: 100vw;
+    height: 100vh;
+    justify-content: center; /*é utilizada para alinhar os itens ao longo do eixo pricipal de um container flexivel ou de um drid container*/
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(red, green, blue, alpha);
+    backdrop-filter: blur(30px); /*é usada para aplicar efeitos visuais , como desfoque, saturação de brilho, ao fundo de um elemento, incluindo tudo o que estiver por trás dele, como imagens ou outros elementos.*/
+    border: 2px solid#ffffff30;
+    width: 400px;
+    height: 550px;
+    align-items: center; /* usada para centralizar o texto de um elemento*/
+    justify-content: space-around;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 1.5rem arial;
+
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input input {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px; /*é usada para arredondar os cantos de um elemento, tornando-os suaves em vez de angulares*/
+    border: none;
+    outline: 2px; /*é usada para adicionar um contorno ao redor de um elemento, sem afetar o layout da página*/
+    font: bold 1.5rem arial;
+    text-align: center;
+    background-color: transparent;
+}
+
+.input label {
+    font: bold 1.5rem arial;
+}
+input::placeholder {
+    color: black;
+    font-style: italic; 
+    font-size: 18px;
+}
+
+button {
+    width: 300px; /* é usada para definir a largura de um elemento*/
+    height: 40px;
+    font: bold 1.2rem arial;
+    background: black;
+    color: aqua;
+    outline: none;
+    border-radius: 55px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.result {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 55px;
+    font: italic 1.0rem arial;
+}
+
+button {
+    font: bold 1.2rem arial;
+    background: rgb(150, 3, 59);
+    color: rgb(234, 126, 184);
+    outline: none;
+    border-radius: 55px;
+    cursor: pointer;
+    font-weight: bold;
+    /*estilo para logotipo*/
+}
+
+.result {
+    display: flex;
+    margin-top: 20px;
+    align-items: center; /* utilizado para centralizar*/
+    width: 300px;
+    height: 150px;
+    border-radius: 55px;
+    font: italic 1.0rem arial;
+    box-shadow: 0px 0px 10px rgb(rgb(175, 8, 94), rgb(0, 218, 76), rgb(0, 123, 255));
+    background-color: rgba(rgb(173, 93, 93), rgb(62, 142, 62), rgb(85, 85, 134), 0,08);
+    color: rgb(183, 82, 126);
+    padding: 10px;
+    box-sizing: border-box;
+    user-select: none; /* é utilizado para controlar se o usuário pode selecionar o conteudo de um elemento com o cursor do mouse ou  atráves de toque*/
+}
